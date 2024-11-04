@@ -29,6 +29,11 @@ public class fileController {
         return "home";
     }
 
+    @GetMapping("/")
+    public String index() {
+        return "redirect:/files";
+    }
+
 
         @GetMapping("/home")
     public String listFiles( Model model) {
